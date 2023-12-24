@@ -9,11 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack(alignment: .leading) {
+            Text("Blackmagic Tools")
+                .font(.largeTitle)
+                .fontWeight(.semibold)
+                .multilineTextAlignment(.leading)
+            
+            Button(action: {
+                print("Hello, World!")
+            }) {
+                Text("Capture Still")
+            }
         }
         .padding()
     }
