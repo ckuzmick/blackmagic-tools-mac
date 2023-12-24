@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State public var selectedTable = 1;
+    
     var body: some View {
         VStack(alignment: .leading) {
             Text("Blackmagic Tools")
@@ -15,10 +17,23 @@ struct ContentView: View {
                 .fontWeight(.semibold)
                 .multilineTextAlignment(.leading)
             
+            Picker(selection: $selectedTable, label: Text("Which table?")) {
+                Text("Main Table").tag(1)
+                Text("Side Table").tag(2)
+            }
+                .frame(width: 400.0)
+                .pickerStyle(SegmentedPickerStyle())
+            
             Button(action: {
                 print("Hello, World!")
             }) {
                 Text("Capture Still")
+            }
+            .onHover { isHovered in
+                NSCursor.pointingHand.set()
+            }
+            .onExitCommand {
+                NSCursor.arrow.set()
             }
         }
         .padding()
