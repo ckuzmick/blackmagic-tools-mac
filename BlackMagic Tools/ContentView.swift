@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import Foundation
 
 struct ContentView: View {
-    @State public var selectedTable = 1;
+    @State public var selectedTable = 0;
+    @State public var selectedCam = 0;
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -18,14 +20,29 @@ struct ContentView: View {
                 .multilineTextAlignment(.leading)
             
             Picker(selection: $selectedTable, label: Text("Which table?")) {
-                Text("Main Table").tag(1)
-                Text("Side Table").tag(2)
+                Text("Main Table").tag(0)
+                Text("Side Table").tag(1)
+            }
+                .frame(width: 400.0)
+                .pickerStyle(SegmentedPickerStyle())
+            
+            Picker(selection: $selectedCam, label: Text("Which camera?")) {
+                if (selectedTable == 0) {
+                    Text("Overhead").tag(0)
+                    Text("Front On").tag(1)
+                    Text("Close Up").tag(2)
+                } else if (selectedTable == 1) {
+                    Text("Front On").tag(1)
+                    Text("Close Up").tag(2)
+                }
+                
             }
                 .frame(width: 400.0)
                 .pickerStyle(SegmentedPickerStyle())
             
             Button(action: {
-                print("Hello, World!")
+                print("running script...")
+                runTask(command: "/Users/ck/Downloads/get_still_script")
             }) {
                 Text("Capture Still")
             }
@@ -37,6 +54,17 @@ struct ContentView: View {
             }
         }
         .padding()
+    }
+    
+    private func runTask(command: String) {
+        let process = Process()
+        process.executableURL = URL(fileURLWithPath: "/Users/ck/Downloads/get_still_script")
+        do {
+            try process.run()
+        } catch {
+            print("ERROR")
+        }
+        process.waitUntilExit()
     }
 }
 

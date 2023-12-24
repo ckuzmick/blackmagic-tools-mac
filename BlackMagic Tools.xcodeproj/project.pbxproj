@@ -95,11 +95,11 @@
 		43AA73082B388F3B003FD444 /* BlackMagic Tools */ = {
 			isa = PBXGroup;
 			children = (
+				43AA730F2B388F3D003FD444 /* Preview Content */,
 				43AA73092B388F3B003FD444 /* BlackMagic_ToolsApp.swift */,
 				43AA730B2B388F3B003FD444 /* ContentView.swift */,
 				43AA730D2B388F3D003FD444 /* Assets.xcassets */,
 				43AA73122B388F3D003FD444 /* BlackMagic_Tools.entitlements */,
-				43AA730F2B388F3D003FD444 /* Preview Content */,
 			);
 			path = "BlackMagic Tools";
 			sourceTree = "<group>";
@@ -197,6 +197,7 @@
 				TargetAttributes = {
 					43AA73052B388F3B003FD444 = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 					43AA73162B388F3D003FD444 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -415,13 +416,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "BlackMagic Tools/BlackMagic_Tools.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BlackMagic Tools/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -431,6 +435,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ckuzmick.BlackMagic-Tools";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -440,13 +445,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "BlackMagic Tools/BlackMagic_Tools.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BlackMagic Tools/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
