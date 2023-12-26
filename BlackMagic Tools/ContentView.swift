@@ -42,29 +42,30 @@ struct ContentView: View {
             
             Button(action: {
                 print("running script...")
-                runTask(command: "/Users/ck/Downloads/get_still_script")
+                runTask(command: "get_still_script")
             }) {
                 Text("Capture Still")
-            }
-            .onHover { isHovered in
-                NSCursor.pointingHand.set()
-            }
-            .onExitCommand {
-                NSCursor.arrow.set()
             }
         }
         .padding()
     }
     
     private func runTask(command: String) {
-        let process = Process()
-        process.executableURL = URL(fileURLWithPath: "/Users/ck/Downloads/get_still_script")
-        do {
-            try process.run()
-        } catch {
-            print("ERROR")
+        if let path = Bundle.main.path(forResource: command, ofType: nil) {
+            let process = Process()
+            process.executableURL = URL(fileURLWithPath: path)
+            process.arguments = [String(selectedTable), String(selectedCam)]
+            
+            do {
+                try process.run()
+            } catch {
+                print("ERROR: File Could Not Be Ran")
+            }
+            
+            process.waitUntilExit()
+        } else {
+            print("ERROR: File Not Found")
         }
-        process.waitUntilExit()
     }
 }
 
