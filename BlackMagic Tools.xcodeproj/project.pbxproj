@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		439A173B2B3B3AB60006AA15 /* StillCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A173A2B3B3AB60006AA15 /* StillCaptureView.swift */; };
+		439A173F2B3B3D110006AA15 /* runTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A173E2B3B3D110006AA15 /* runTask.swift */; };
+		439A17412B3B40550006AA15 /* GifCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A17402B3B40550006AA15 /* GifCaptureView.swift */; };
+		439A17442B3B439E0006AA15 /* CompactSlider in Frameworks */ = {isa = PBXBuildFile; productRef = 439A17432B3B439E0006AA15 /* CompactSlider */; };
+		439A17462B3B46320006AA15 /* VideoCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A17452B3B46320006AA15 /* VideoCaptureView.swift */; };
 		43AA730A2B388F3B003FD444 /* BlackMagic_ToolsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AA73092B388F3B003FD444 /* BlackMagic_ToolsApp.swift */; };
 		43AA730C2B388F3B003FD444 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AA730B2B388F3B003FD444 /* ContentView.swift */; };
 		43AA730E2B388F3D003FD444 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43AA730D2B388F3D003FD444 /* Assets.xcassets */; };
@@ -35,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		439A173A2B3B3AB60006AA15 /* StillCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StillCaptureView.swift; sourceTree = "<group>"; };
+		439A173E2B3B3D110006AA15 /* runTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = runTask.swift; sourceTree = "<group>"; };
+		439A17402B3B40550006AA15 /* GifCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifCaptureView.swift; sourceTree = "<group>"; };
+		439A17452B3B46320006AA15 /* VideoCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCaptureView.swift; sourceTree = "<group>"; };
 		43AA73062B388F3B003FD444 /* BlackMagic Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlackMagic Tools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43AA73092B388F3B003FD444 /* BlackMagic_ToolsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackMagic_ToolsApp.swift; sourceTree = "<group>"; };
 		43AA730B2B388F3B003FD444 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				439A17442B3B439E0006AA15 /* CompactSlider in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +84,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		439A173C2B3B3CD00006AA15 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				43B9C2952B3A87130094F573 /* get_still_script */,
+				439A173E2B3B3D110006AA15 /* runTask.swift */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		439A173D2B3B3CE60006AA15 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				439A173A2B3B3AB60006AA15 /* StillCaptureView.swift */,
+				439A17402B3B40550006AA15 /* GifCaptureView.swift */,
+				439A17452B3B46320006AA15 /* VideoCaptureView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
 		43AA72FD2B388F3B003FD444 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +126,13 @@
 		43AA73082B388F3B003FD444 /* BlackMagic Tools */ = {
 			isa = PBXGroup;
 			children = (
+				439A173D2B3B3CE60006AA15 /* SubViews */,
+				439A173C2B3B3CD00006AA15 /* Scripts */,
 				43AA730F2B388F3D003FD444 /* Preview Content */,
-				43AA73092B388F3B003FD444 /* BlackMagic_ToolsApp.swift */,
 				43AA730D2B388F3D003FD444 /* Assets.xcassets */,
 				43AA73122B388F3D003FD444 /* BlackMagic_Tools.entitlements */,
+				43AA73092B388F3B003FD444 /* BlackMagic_ToolsApp.swift */,
 				43AA730B2B388F3B003FD444 /* ContentView.swift */,
-				43B9C2952B3A87130094F573 /* get_still_script */,
 			);
 			path = "BlackMagic Tools";
 			sourceTree = "<group>";
@@ -148,6 +178,9 @@
 			dependencies = (
 			);
 			name = "BlackMagic Tools";
+			packageProductDependencies = (
+				439A17432B3B439E0006AA15 /* CompactSlider */,
+			);
 			productName = "BlackMagic Tools";
 			productReference = 43AA73062B388F3B003FD444 /* BlackMagic Tools.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +254,9 @@
 				Base,
 			);
 			mainGroup = 43AA72FD2B388F3B003FD444;
+			packageReferences = (
+				439A17422B3B439E0006AA15 /* XCRemoteSwiftPackageReference "CompactSlider" */,
+			);
 			productRefGroup = 43AA73072B388F3B003FD444 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -264,8 +300,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				439A173F2B3B3D110006AA15 /* runTask.swift in Sources */,
+				439A173B2B3B3AB60006AA15 /* StillCaptureView.swift in Sources */,
 				43AA730C2B388F3B003FD444 /* ContentView.swift in Sources */,
+				439A17462B3B46320006AA15 /* VideoCaptureView.swift in Sources */,
 				43AA730A2B388F3B003FD444 /* BlackMagic_ToolsApp.swift in Sources */,
+				439A17412B3B40550006AA15 /* GifCaptureView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +478,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ckuzmick.BlackMagic-Tools";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -467,6 +510,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ckuzmick.BlackMagic-Tools";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -580,6 +626,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		439A17422B3B439E0006AA15 /* XCRemoteSwiftPackageReference "CompactSlider" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/buh/CompactSlider.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		439A17432B3B439E0006AA15 /* CompactSlider */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 439A17422B3B439E0006AA15 /* XCRemoteSwiftPackageReference "CompactSlider" */;
+			productName = CompactSlider;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 43AA72FE2B388F3B003FD444 /* Project object */;
 }
