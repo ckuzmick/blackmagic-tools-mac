@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		439A173B2B3B3AB60006AA15 /* StillCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A173A2B3B3AB60006AA15 /* StillCaptureView.swift */; };
 		439A173F2B3B3D110006AA15 /* runTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A173E2B3B3D110006AA15 /* runTask.swift */; };
 		439A17412B3B40550006AA15 /* GifCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A17402B3B40550006AA15 /* GifCaptureView.swift */; };
 		439A17442B3B439E0006AA15 /* CompactSlider in Frameworks */ = {isa = PBXBuildFile; productRef = 439A17432B3B439E0006AA15 /* CompactSlider */; };
@@ -20,6 +19,7 @@
 		43AA73262B388F3D003FD444 /* BlackMagic_ToolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AA73252B388F3D003FD444 /* BlackMagic_ToolsUITests.swift */; };
 		43AA73282B388F3D003FD444 /* BlackMagic_ToolsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AA73272B388F3D003FD444 /* BlackMagic_ToolsUITestsLaunchTests.swift */; };
 		43B9C2962B3A87140094F573 /* get_still_script in Resources */ = {isa = PBXBuildFile; fileRef = 43B9C2952B3A87130094F573 /* get_still_script */; };
+		43D29A112B3B8A6E009BA04D /* StillCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D29A102B3B8A6E009BA04D /* StillCaptureView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		439A173A2B3B3AB60006AA15 /* StillCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StillCaptureView.swift; sourceTree = "<group>"; };
 		439A173E2B3B3D110006AA15 /* runTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = runTask.swift; sourceTree = "<group>"; };
 		439A17402B3B40550006AA15 /* GifCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifCaptureView.swift; sourceTree = "<group>"; };
 		439A17452B3B46320006AA15 /* VideoCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCaptureView.swift; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 		43AA73252B388F3D003FD444 /* BlackMagic_ToolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackMagic_ToolsUITests.swift; sourceTree = "<group>"; };
 		43AA73272B388F3D003FD444 /* BlackMagic_ToolsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackMagic_ToolsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		43B9C2952B3A87130094F573 /* get_still_script */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = get_still_script; sourceTree = "<group>"; };
+		43D29A102B3B8A6E009BA04D /* StillCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StillCaptureView.swift; path = "Blackmagic Tools/SubViews/StillCaptureView.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +96,9 @@
 		439A173D2B3B3CE60006AA15 /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
-				439A173A2B3B3AB60006AA15 /* StillCaptureView.swift */,
 				439A17402B3B40550006AA15 /* GifCaptureView.swift */,
 				439A17452B3B46320006AA15 /* VideoCaptureView.swift */,
+				43D29A102B3B8A6E009BA04D /* StillCaptureView.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -245,7 +245,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 43AA73012B388F3B003FD444 /* Build configuration list for PBXProject "BlackMagic Tools" */;
+			buildConfigurationList = 43AA73012B388F3B003FD444 /* Build configuration list for PBXProject "Blackmagic Tools" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -300,8 +300,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43D29A112B3B8A6E009BA04D /* StillCaptureView.swift in Sources */,
 				439A173F2B3B3D110006AA15 /* runTask.swift in Sources */,
-				439A173B2B3B3AB60006AA15 /* StillCaptureView.swift in Sources */,
 				43AA730C2B388F3B003FD444 /* ContentView.swift in Sources */,
 				439A17462B3B46320006AA15 /* VideoCaptureView.swift in Sources */,
 				43AA730A2B388F3B003FD444 /* BlackMagic_ToolsApp.swift in Sources */,
@@ -589,7 +589,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		43AA73012B388F3B003FD444 /* Build configuration list for PBXProject "BlackMagic Tools" */ = {
+		43AA73012B388F3B003FD444 /* Build configuration list for PBXProject "Blackmagic Tools" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				43AA73292B388F3D003FD444 /* Debug */,
