@@ -8,8 +8,42 @@
 import SwiftUI
 
 struct VideoCaptureView: View {
+    @State public var selectedTable = 0;
+    @State public var selectedCam = 0;
+    @State public var isRecording = false;
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Picker(selection: $selectedTable, label: Text("Which table?")) {
+                Text("Main Table").tag(0)
+                Text("Side Table").tag(1)
+            }
+            .frame(width: 400.0)
+            
+            Picker(selection: $selectedCam, label: Text("Which camera?")) {
+                if (selectedTable == 0) {
+                    Text("Overhead").tag(0)
+                    Text("Front On").tag(1)
+                    Text("Close Up").tag(2)
+                } else if (selectedTable == 1) {
+                    Text("Front On").tag(1)
+                    Text("Close Up").tag(2)
+                }
+            }
+            .frame(width: 400.0)
+            
+            if (isRecording) {
+                Button("Stop Recording") {
+                    // TaskRunner().runTask(command: "get_still_script", args: [String(selectedTable), String(selectedCam)])
+                    isRecording = false
+                }
+            } else if (!isRecording) {
+                Button("Stop Recording") {
+                    // TaskRunner().runTask(command: "get_still_script", args: [String(selectedTable), String(selectedCam)])
+                    isRecording = true
+                }
+            }
+        }
     }
 }
 

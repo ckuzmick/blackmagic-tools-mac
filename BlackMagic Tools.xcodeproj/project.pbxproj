@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		435EABE82B3DD9A1004277B2 /* get_still_script in Resources */ = {isa = PBXBuildFile; fileRef = 435EABE72B3DD9A0004277B2 /* get_still_script */; };
 		439A173F2B3B3D110006AA15 /* runTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A173E2B3B3D110006AA15 /* runTask.swift */; };
 		439A17412B3B40550006AA15 /* GifCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A17402B3B40550006AA15 /* GifCaptureView.swift */; };
 		439A17442B3B439E0006AA15 /* CompactSlider in Frameworks */ = {isa = PBXBuildFile; productRef = 439A17432B3B439E0006AA15 /* CompactSlider */; };
@@ -18,7 +19,6 @@
 		43AA731C2B388F3D003FD444 /* BlackMagic_ToolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AA731B2B388F3D003FD444 /* BlackMagic_ToolsTests.swift */; };
 		43AA73262B388F3D003FD444 /* BlackMagic_ToolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AA73252B388F3D003FD444 /* BlackMagic_ToolsUITests.swift */; };
 		43AA73282B388F3D003FD444 /* BlackMagic_ToolsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AA73272B388F3D003FD444 /* BlackMagic_ToolsUITestsLaunchTests.swift */; };
-		43B9C2962B3A87140094F573 /* get_still_script in Resources */ = {isa = PBXBuildFile; fileRef = 43B9C2952B3A87130094F573 /* get_still_script */; };
 		43D29A112B3B8A6E009BA04D /* StillCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D29A102B3B8A6E009BA04D /* StillCaptureView.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		435EABE72B3DD9A0004277B2 /* get_still_script */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = get_still_script; sourceTree = "<group>"; };
 		439A173E2B3B3D110006AA15 /* runTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = runTask.swift; sourceTree = "<group>"; };
 		439A17402B3B40550006AA15 /* GifCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifCaptureView.swift; sourceTree = "<group>"; };
 		439A17452B3B46320006AA15 /* VideoCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCaptureView.swift; sourceTree = "<group>"; };
@@ -54,7 +55,6 @@
 		43AA73212B388F3D003FD444 /* BlackMagic ToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BlackMagic ToolsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43AA73252B388F3D003FD444 /* BlackMagic_ToolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackMagic_ToolsUITests.swift; sourceTree = "<group>"; };
 		43AA73272B388F3D003FD444 /* BlackMagic_ToolsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackMagic_ToolsUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		43B9C2952B3A87130094F573 /* get_still_script */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = get_still_script; sourceTree = "<group>"; };
 		43D29A102B3B8A6E009BA04D /* StillCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StillCaptureView.swift; path = "Blackmagic Tools/SubViews/StillCaptureView.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -87,7 +87,7 @@
 		439A173C2B3B3CD00006AA15 /* Scripts */ = {
 			isa = PBXGroup;
 			children = (
-				43B9C2952B3A87130094F573 /* get_still_script */,
+				435EABE72B3DD9A0004277B2 /* get_still_script */,
 				439A173E2B3B3D110006AA15 /* runTask.swift */,
 			);
 			path = Scripts;
@@ -275,7 +275,7 @@
 			files = (
 				43AA73112B388F3D003FD444 /* Preview Assets.xcassets in Resources */,
 				43AA730E2B388F3D003FD444 /* Assets.xcassets in Resources */,
-				43B9C2962B3A87140094F573 /* get_still_script in Resources */,
+				435EABE82B3DD9A1004277B2 /* get_still_script in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

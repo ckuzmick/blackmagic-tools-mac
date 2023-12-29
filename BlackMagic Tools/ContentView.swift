@@ -9,9 +9,6 @@ import SwiftUI
 import Foundation
 
 struct ContentView: View {
-    @State public var selectedTable = 0;
-    @State public var selectedCam = 0;
-    
     var body: some View {
         TabView {
             StillCaptureView()
